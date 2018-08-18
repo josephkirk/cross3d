@@ -1,6 +1,7 @@
-# Cross3d
-A python implementation of commands that work in multiple programs(Studiomax, Softimage).
+# Cross3d_ex , reimplement from blur Cross3d
+A python implementation of commands that work in multiple programs(Studiomax, Maya, Unreal).
 It utilizes a abstract definition of commands, and a software specific implementation of those commands.
+
 
 # Package Overview
 ## cross3d
