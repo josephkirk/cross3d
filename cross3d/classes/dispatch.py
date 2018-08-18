@@ -7,7 +7,7 @@ file operations, using a reference counter
 
 """
 
-from PyQt4.QtCore import pyqtSignal, QObject
+from Qt.QtCore import pyqtSignal, QObject
 
 class Dispatch(QObject):
 	# scene signals
@@ -204,7 +204,7 @@ class Dispatch(QObject):
 
 		# otherwise emit a custom signal
 		else:
-			from PyQt4.QtCore import SIGNAL
+			from Qt.QtCore import SIGNAL
 			self.emit(SIGNAL(signal), *args)
 
 		# emit linked signals
@@ -237,7 +237,7 @@ class Dispatch(QObject):
 
 		# otherwise emit a custom signal
 		else:
-			from PyQt4.QtCore import SIGNAL
+			from Qt.QtCore import SIGNAL
 			self.emit(SIGNAL(signal), *args)
 
 		# emit linked signals

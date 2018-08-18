@@ -1,10 +1,10 @@
 # cross3d.studiomax
 ## Required Modules
 These modules are used by the DCC implementation for Studiomax. You may need some or all of them.
-### PyQt4:
-While you can use the vanilla PyQt4 source code, for it to work inside 3ds Max you need to compile it with the correct version of Visual Studio. Currently if you can't compile it yourself, you can extract the the Qt and PyQt4 installers from the BlurOffline installer at https://sourceforge.net/projects/blur-dev/. See alternate download method of Py3dsMax.
+### Qt:
+While you can use the vanilla Qt source code, for it to work inside 3ds Max you need to compile it with the correct version of Visual Studio. Currently if you can't compile it yourself, you can extract the the Qt and Qt installers from the BlurOffline installer at https://sourceforge.net/projects/blur-dev/. See alternate download method of Py3dsMax.
 
-At Blur, we currently install msvc2008 Qt in a global location and PyQt4 inside python's site-packages. For Max 2016 we install msvc2012 Qt inside [MaxRoot] and PyQt4 inside [MaxRoot]\python\Lib.
+At Blur, we currently install msvc2008 Qt in a global location and Qt inside python's site-packages. For Max 2016 we install msvc2012 Qt inside [MaxRoot] and Qt inside [MaxRoot]\python\Lib.
 ### Py3dsMax:
 Currently all maxscript code is using the blur studio's Py3dsMax module. If 3ds max's native python interface becomes a suitable replacement it will probably replace Py3dsMax. You can download the Py3dsMax dlx from https://github.com/blurstudio/Py3dsMax/releases.
 cross3d\studiomax\_Py3dsMax_setup contains a example of how to setup Py3dsMax and use the standard 64bit python's site-packages.

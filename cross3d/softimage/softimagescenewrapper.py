@@ -49,7 +49,7 @@ class SoftimageSceneWrapper( AbstractSceneWrapper ):
 			\param		name	<str>
 			\return		<bool> success
 		"""
-		# NOTE: passing a PyQt4.QtCore.QString object will crash Softimage
+		# NOTE: passing a Qt.QtCore.QString object will crash Softimage
 		self.nativePointer().Name = unicode(name)
 		return True
 

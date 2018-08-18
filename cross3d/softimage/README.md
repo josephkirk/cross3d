@@ -7,10 +7,10 @@ PySoftimage is a python module used to expose the softimage api to python.
 Ultimately all it is doing is providing a easy interface for the win32com.client.Dispatch calls. Ideally we will remove the need for this module.
 
 To install this module, copy the PySoftimage folder from cross3d\softimage\_PySoftimage_setup to a valid site-packages folder.
-### PyQt4
-You should be able use the standard PyQt4 installers available from Riverbank. https://www.riverbankcomputing.com/software/pyqt/download.
+### Qt
+You should be able use the standard Qt installers available from Riverbank. https://www.riverbankcomputing.com/software/pyqt/download.
 
-At Blur, we currently install msvc2008 Qt in a global location and PyQt4 inside python's site-packages.
+At Blur, we currently install msvc2008 Qt in a global location and Qt inside python's site-packages.
 ### win32com
 PySoftimage and other functionality use pywin32 to control Softimage.
 ### pywintypes

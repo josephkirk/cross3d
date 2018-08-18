@@ -8,7 +8,7 @@
 #	\date		06/09/11
 #
 
-from PyQt4.QtCore import QThread
+from Qt.QtCore import QThread
 import time
 
 class DispatchProcess(QThread):
@@ -53,7 +53,7 @@ class DispatchProcess(QThread):
 		
 		# otherwise emit a custom signal
 		else:
-			from PyQt4.QtCore import SIGNAL
+			from Qt.QtCore import SIGNAL
 			self.emit( SIGNAL( signal ), *args )
 		
 		# emit linked signals

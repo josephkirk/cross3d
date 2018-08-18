@@ -40,7 +40,7 @@ cross3d.registerSymbol('Scene', StudiomaxScene)
 This code is used to store the StudiomaxScene class(`cross3d.studiomax.studiomaxscene.StudiomaxScene`) in the official cross3d name of `cross3d.Scene`.
 
 # Additional packages
-* Currently `PyQt4` is required for cross3d.
+* Currently `Qt` is required for cross3d.
 * `cross3d.FCurve` requires `numpy`
 
 Depending on the DCC some additional modules are needed. These are documented in the DCC's readme.md file.
@@ -143,7 +143,7 @@ cross3d was originally called blurapi. Eric Hulser and a few others wrote the in
 ## TODO:
 blur3d has been used in blur for several years. It uses several blur specific api's and is dependent on several of blur api's that are not currently easily available via open source, and in most cases are completely unnecessary outside of blur. We are migrating blur3d to cross3d we are taking the opportunity to remove the extra dependencies. Here are a list of upcoming changes planned to make cross3d easier to integrate in other pipelines.
 
-* **PyQt4:** Currently cross3d is dependent on PyQt4 which is not easily available in most DCCs. We need it for our database api, so we end up compiling a compatible version for each DCC. If possible we will remove Qt dependencies entirely(I think `cross3d.dispatch` is the only module that currently needs Qt for signals). Otherwise I will make it so cross3d can be configured to use PyQt4 or PySide.
+* **Qt:** Currently cross3d is dependent on Qt which is not easily available in most DCCs. We need it for our database api, so we end up compiling a compatible version for each DCC. If possible we will remove Qt dependencies entirely(I think `cross3d.dispatch` is the only module that currently needs Qt for signals). Otherwise I will make it so cross3d can be configured to use Qt or PySide.
 * **cross3d.enum.enum:** Currently many of the enums are using `cross3d.enum.enum`. These should all be converted to EnumGroup subclasses. I want to verify how each is being used and make sure the conversion doesn't cause problems.
 * **cross3d.migrate:** This module contains duplicate code for modules that are need for cross3d to function. Some of them may end up in separate packages and some may be removed entirely.
   * **XML:** This module may be removed, or replaced with a more standard xml parsing module.
