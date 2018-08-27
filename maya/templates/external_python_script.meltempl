@@ -1,0 +1,6 @@
+autoLoadPlugin("", "blur_maya", "blur_maya.py");
+python("execfile(r'C:\\temp\\maya_script.py')");
+
+if (!{debug}) {{
+	quit -force;
+}}
